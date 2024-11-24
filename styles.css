@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fc;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.cell {
+  width: 100%;
+  padding-top: 100%; /* Square cells */
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.cell:hover {
+  background-color: #dcdfe1;
+}
+
+.cell span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #34495e;
+  transition: color 0.3s ease;
+}
+
+#reset {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+  background-color: #2980b9;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
