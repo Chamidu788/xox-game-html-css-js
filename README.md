@@ -1,6 +1,4 @@
-Here’s a sample **README.md** for your GitHub repository. This README includes the project description, installation instructions, usage, and any other relevant details to help others understand and use your Tic-Tac-Toe game.
 
----
 
 # Tic-Tac-Toe Game
 
